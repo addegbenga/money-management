@@ -75,7 +75,7 @@ export default function Dropdown({ isOpen, closeModal }) {
                     className="inline-flex justify-center px-5 py-3 text-base font-medium text-black border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     onClick={closeModal}
                   >
-                    <Link to="register">Sign up</Link>
+                    <Link to="login">Sign up</Link>
                   </button>
                 </div>
               </div>
