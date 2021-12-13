@@ -18,10 +18,10 @@ export default function Testimonials() {
       </div>
 
       <div className="flex items-center relative justify-center">
-        <button className="absolute left-0 hidden lg:block h-20 w-20 flex items-center justify-center rounded-full border text-black">
+        <button className="absolute left-0 hidden lg:flex h-20 w-20  items-center justify-center rounded-full border text-black">
           <AiOutlineArrowLeft size={20} />
         </button>
-        <button className="absolute right-0 h-20 flex justify-center items-center w-20 rounded-full border">
+        <button className="absolute right-0 h-20 hidden lg:flex  justify-center items-center w-20 rounded-full border">
           <AiOutlineArrowRight size={20} />
         </button>
         <div className="max-w-md">
