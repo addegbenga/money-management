@@ -1,5 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 export default function Dropdown({ isOpen, closeModal }) {
   return (
@@ -66,15 +67,15 @@ export default function Dropdown({ isOpen, closeModal }) {
                     className="inline-flex justify-center px-4 py-3 text-base font-medium text-white secondary-bg border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     onClick={closeModal}
                   >
-                    Create account
+                    <Link to="register">Create account</Link>
                   </button>
                   <button
-                  style={{border:"1.2px solid  #0c7268"}}
+                    style={{ border: "1.2px solid  #0c7268" }}
                     type="button"
                     className="inline-flex justify-center px-5 py-3 text-base font-medium text-black border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     onClick={closeModal}
                   >
-                    Sign up
+                    <Link to="register">Sign up</Link>
                   </button>
                 </div>
               </div>

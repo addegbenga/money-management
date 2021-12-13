@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -22,7 +23,9 @@ export default function HowItWorks() {
   return (
     <div className="secondary-bg px-5 py-20 md:px-10 lg:px-20">
       <div className="flex md:block items-center flex-col">
-        <h1 className="text-4xl mb-2 font-bold text-center md:text-left text-white">How it works</h1>
+        <h1 className="text-4xl mb-2 font-bold text-center md:text-left text-white">
+          How it works
+        </h1>
         <p className="text-lg text-center text-black md:text-left text-white">
           Create your account in 3 easy steps
         </p>
@@ -37,14 +40,16 @@ export default function HowItWorks() {
                 <h1 className="text-lg md:mb-2 font-semibold text-white">
                   {item.title}
                 </h1>
-                <p className="lg:text-base md:text-xs pr-20 text-white">{item.desc}</p>
+                <p className="lg:text-base md:text-xs pr-20 text-white">
+                  {item.desc}
+                </p>
               </div>
             </div>
           ))}
         </div>
         <div className="">
           <button className="text-black bg-white px-14 py-3 lg:py-4 md:py-3 rounded">
-            Get Started
+            <Link to="register">Get Started</Link>
           </button>
         </div>
       </div>

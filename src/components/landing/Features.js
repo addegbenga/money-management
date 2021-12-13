@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -34,7 +35,9 @@ export default function Features() {
   return (
     <div className="py-20 bg-gray-100 bg-opacity-30 px-5  md:px-10 lg:px-20 ">
       <div>
-        <h1 className="text-4xl primary-text text-center md:text-left font-semibold mb-2">Features</h1>
+        <h1 className="text-4xl primary-text text-center md:text-left font-semibold mb-2">
+          Features
+        </h1>
         <p className="md:text-xl text-base text-center md:text-left font-semibold">
           Here are some of the interesting features
         </p>
@@ -63,9 +66,16 @@ export default function Features() {
               } flex flex-col md:flex-row gap-20 mb-14 md:md-0 items-center`}
             >
               <div className="lg:max-w-md flex md:block flex-col items-center ">
-                <h1 className="lg:text-4xl text-2xl text-center md:text-left px-8 md:px-0 md:text-2xl  secondary-text mb-3 tracking-tight font-semibold">{item.title}</h1>
-                <p className="lg:text-lg text-center md:text-left md:text-sm">{item.desc}</p>
-                <button className="text-white secondary-bg px-12 mt-6 py-3 rounded md:py-2 lg:py-3">Get Started</button>
+                <h1 className="lg:text-4xl text-2xl text-center md:text-left px-8 md:px-0 md:text-2xl  secondary-text mb-3 tracking-tight font-semibold">
+                  {item.title}
+                </h1>
+                <p className="lg:text-lg text-center md:text-left md:text-sm">
+                  {item.desc}
+                </p>
+                <button className="text-white secondary-bg px-12 mt-6 py-3 rounded md:py-2 lg:py-3">
+                  {" "}
+                  <Link to="register">Get Started</Link>
+                </button>
               </div>
               <figure>
                 <img className="w-11/12" src={item.img} alt="svg" />
