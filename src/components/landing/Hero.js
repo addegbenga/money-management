@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="mt-14 lg:block  flex flex-col items-center">
           <h1
         
-            className="xl:text-6xl text-3xl text-center lg:text-left md:text-4xl xl:leading-[3.5rem] secondary-text  tracking-tighter font-black"
+            className="xl:text-6xl text-4xl text-center lg:text-left md:text-4xl xl:leading-[3.5rem] secondary-text  tracking-tighter font-black"
           >
             Money management <br />
             for smart people.
