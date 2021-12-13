@@ -1,0 +1,79 @@
+import React from "react";
+
+const data = [
+  {
+    title: "Simple setup",
+    desc: " You can create an account and set up instantly in 3 easy steps.",
+    img: "/assets/Vector.png",
+  },
+  {
+    title: "Secure",
+    desc: " Our Trust & Safety team work around the clock to protect you against fraud.",
+    img: "/assets/Vector (1).png",
+  },
+  {
+    title: "Track your Spending",
+    desc: " Stay on top of your finances by seeing where your money comes and goes.",
+    img: "/assets/Vector (2).png",
+  },
+];
+
+const data2 = [
+  {
+    title: "High Visibility For all Your  Funds in One Place",
+    desc: " See where all your money goes by easily adding your cash, credit cards, investments, and bills.",
+    img: "/assets/Finance-cuate 1.svg",
+  },
+  {
+    title: "Set Goals, Save Time",
+    desc: " Improve your spending habits with custom goals that keep you going. Save for a home, crush debt, and prepare for the future.",
+    img: "/assets/Wallet-cuate 1.svg",
+  },
+];
+export default function Features() {
+  return (
+    <div className="py-20 bg-gray-100 bg-opacity-30  md:px-10 lg:px-20 ">
+      <div>
+        <h1 className="text-4xl primary-text font-semibold mb-2">Features</h1>
+        <p className="text-xl font-semibold">
+          Here are some of the interesting features
+        </p>
+        <div className="mt-14 flex md:gap-5 lg:gap-20">
+          {data.map((item, index) => (
+            <div className="flex lg:items-center">
+              <figure>
+                <img src={item.img} alt="icon" />
+              </figure>
+              <div className="ml-2.5">
+                <h1 className="text-xl font-semibold text-black text-opacity-80">
+                  {item.title}
+                </h1>
+                <p className="md:text-sm lg:text-lg">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-20 flex flex-col md:gap-10  items-center  ">
+          {data2.map((item, index) => (
+            <div
+              key={index}
+              className={`${
+                index === 1 ? " flex-row-reverse" : ""
+              } flex gap-20 items-center`}
+            >
+              <div className="lg:max-w-md ">
+                <h1 className="lg:text-4xl md:text-2xl  secondary-text mb-3 tracking-tight font-semibold">{item.title}</h1>
+                <p className="lg:text-lg md:text-sm">{item.desc}</p>
+                <button className="text-white secondary-bg px-12 mt-6 rounded md:py-2 lg:py-3">Get Started</button>
+              </div>
+              <figure>
+                <img className="w-11/12" src={item.img} alt="svg" />
+              </figure>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

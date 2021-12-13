@@ -7,4 +7,6 @@
 * {
   /* font-family: "Averia Serif Libre", cursive; */
   font-family: "DM Sans", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
 }

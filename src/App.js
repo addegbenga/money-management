@@ -1,10 +1,11 @@
-import './App.css';
+import "./App.css";
+import RoutePages from "./pages/index";
 
 function App() {
   return (
-  <div>
-    <h1>Welcome to the best money management app fo all time</h1>
-  </div>
+   <div>
+     <RoutePages/>
+   </div>
   );
 }
 
