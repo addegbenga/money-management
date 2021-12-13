@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineAlignRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
 export default function Navbar() {
   let [isOpen, setIsOpen] = useState(false);
@@ -38,10 +39,10 @@ export default function Navbar() {
               style={{ color: "#169387" }}
               className="px-4 font-semibold py-2 bg-white rounded"
             >
-              Sign up
+              <Link to="register"> Sign up</Link>
             </button>
             <button className="border px-4 py-2 text-white font-semibold rounded ml-4">
-              Log in
+              <Link to="login"> Login</Link>
             </button>
           </div>
           <button onClick={openModal} className=" text-white lg:hidden">
