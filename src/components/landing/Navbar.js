@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineAlignRight } from "react-icons/ai";
-
+import Dropdown from "./Dropdown";
 export default function Navbar() {
+  let [isOpen, setIsOpen] = useState(false);
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
   return (
     <>
+      <Dropdown isOpen={isOpen} closeModal={closeModal} />
       <div className="fixed w-full z-20">
         <div
           style={{ background: "#169387" }}
@@ -35,9 +44,9 @@ export default function Navbar() {
               Log in
             </button>
           </div>
-          <div className=" text-white lg:hidden">
+          <button onClick={openModal} className=" text-white lg:hidden">
             <AiOutlineAlignRight size={24} />
-          </div>
+          </button>
         </div>
         <div className="bg-white hidden lg:block text-center h-7 border-gray-200 border-b w-full border">
           {/* <h1>Sub header</h1> */}
