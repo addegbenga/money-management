@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineAlignRight } from "react-icons/ai";
 
 export default function Navbar() {
   return (
@@ -6,7 +7,7 @@ export default function Navbar() {
       <div className="fixed w-full z-20">
         <div
           style={{ background: "#169387" }}
-          className=" lg:px-20 md:px-10 py-3.5 items-center flex justify-between"
+          className=" lg:px-20 px-5 md:px-10 py-3.5 items-center flex justify-between"
         >
           <h1 className="font-bold tracking-tight text-white text-3xl">mina</h1>
           <div className="text-white items-center hidden lg:flex justify-between ">
@@ -23,7 +24,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="lg:ml-10">
+          <div className="hidden lg:block lg:ml-10">
             <button
               style={{ color: "#169387" }}
               className="px-4 font-semibold py-2 bg-white rounded"
@@ -34,8 +35,11 @@ export default function Navbar() {
               Log in
             </button>
           </div>
+          <div className=" text-white lg:hidden">
+            <AiOutlineAlignRight size={24} />
+          </div>
         </div>
-        <div className="bg-white text-center h-7 border-gray-200 border-b w-full border">
+        <div className="bg-white hidden lg:block text-center h-7 border-gray-200 border-b w-full border">
           {/* <h1>Sub header</h1> */}
         </div>
       </div>

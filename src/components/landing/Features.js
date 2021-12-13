@@ -32,15 +32,15 @@ const data2 = [
 ];
 export default function Features() {
   return (
-    <div className="py-20 bg-gray-100 bg-opacity-30  md:px-10 lg:px-20 ">
+    <div className="py-20 bg-gray-100 bg-opacity-30 px-5  md:px-10 lg:px-20 ">
       <div>
-        <h1 className="text-4xl primary-text font-semibold mb-2">Features</h1>
-        <p className="text-xl font-semibold">
+        <h1 className="text-4xl primary-text text-center md:text-left font-semibold mb-2">Features</h1>
+        <p className="md:text-xl text-base text-center md:text-left font-semibold">
           Here are some of the interesting features
         </p>
-        <div className="mt-14 flex md:gap-5 lg:gap-20">
+        <div className="mt-14 flex flex-col md:flex-row md:gap-5 lg:gap-20">
           {data.map((item, index) => (
-            <div className="flex lg:items-center">
+            <div key={index} className="flex mb-8 md:mb-0 lg:items-center">
               <figure>
                 <img src={item.img} alt="icon" />
               </figure>
@@ -60,12 +60,12 @@ export default function Features() {
               key={index}
               className={`${
                 index === 1 ? " flex-row-reverse" : ""
-              } flex gap-20 items-center`}
+              } flex flex-col md:flex-row gap-20 mb-14 md:md-0 items-center`}
             >
-              <div className="lg:max-w-md ">
-                <h1 className="lg:text-4xl md:text-2xl  secondary-text mb-3 tracking-tight font-semibold">{item.title}</h1>
-                <p className="lg:text-lg md:text-sm">{item.desc}</p>
-                <button className="text-white secondary-bg px-12 mt-6 rounded md:py-2 lg:py-3">Get Started</button>
+              <div className="lg:max-w-md flex md:block flex-col items-center ">
+                <h1 className="lg:text-4xl text-2xl text-center md:text-left px-8 md:px-0 md:text-2xl  secondary-text mb-3 tracking-tight font-semibold">{item.title}</h1>
+                <p className="lg:text-lg text-center md:text-left md:text-sm">{item.desc}</p>
+                <button className="text-white secondary-bg px-12 mt-6 py-3 rounded md:py-2 lg:py-3">Get Started</button>
               </div>
               <figure>
                 <img className="w-11/12" src={item.img} alt="svg" />

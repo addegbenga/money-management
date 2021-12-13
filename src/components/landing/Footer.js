@@ -4,10 +4,10 @@ import { FaLinkedinIn, FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="lg:px-20 md:px-10 py-10" style={{ background: "#0c7268" }}>
-      <div className="pt-8 flex justify-between">
-        <div className=" w-1/2 pb-10 ">
-          <h1 className="lg:text-4xl text-white tracking-tight">Suscribe</h1>
+    <div className="lg:px-20 px-5 md:px-10 py-10" style={{ background: "#0c7268" }}>
+      <div className="pt-8 flex flex-col md:flex-row justify-between">
+        <div className=" md:w-1/2 pb-10 ">
+          <h1 className="lg:text-4xl text-3xl text-white tracking-tight">Suscribe</h1>
           <div className="flex mt-5">
             <input
               className="grid rounded-l-full pl-4 w-full p-3"
@@ -22,8 +22,8 @@ export default function Footer() {
             </button>
           </div>
         </div>
-        <div className=" lg:w-1/5 flex  lg:justify-between ">
-          <div className="flex flex-col md:mr-3 lg:mr-0 text-white ">
+        <div className=" lg:w-1/5 md:flex-row flex-col flex  lg:justify-between ">
+          <div className="flex mb-3 md:mb-0 flex-col md:mr-3 lg:mr-0 text-white ">
             <a className="mb-4" href="#div">
               Company
             </a>
@@ -38,30 +38,30 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex justify-between mt-24">
+      <div className="flex justify-between  mt-24">
         <p className="text-white">&copy;Mina</p>
-        <div className="text-white">
-          <a className="mr-8" href="#div">
+        <div className="text-white gap-3 md:gap-20 flex ">
+          <a className="" href="#div">
             Terms
           </a>
-          <a className="mr-8" href="#div">
+          <a className="" href="#div">
             Privacy
           </a>
           <a className="" href="#div">
             Legal
           </a>
         </div>
-        <div style={{ color: "#169387" }} className="flex">
-          <div className="h-6 flex items-center justify-center mr-4 rounded-full w-6 bg-white ">
+        <div style={{ color: "#169387" }} className="flex gap-2">
+          <div className="h-6 flex items-center justify-center  rounded-full w-6 bg-white ">
             <AiOutlineTwitter className="" />
           </div>
-          <div className="h-6 flex items-center justify-center mr-4 rounded-full w-6 bg-white ">
+          <div className="h-6 flex items-center justify-center  rounded-full w-6 bg-white ">
             <FaTelegramPlane />
           </div>
-          <div className="h-6 flex items-center justify-center mr-4 rounded-full w-6 bg-white ">
+          <div className="h-6 flex items-center justify-center rounded-full w-6 bg-white ">
             <FaFacebookF />
           </div>
-          <div className="h-6 flex items-center justify-center mr-4 rounded-full w-6 bg-white ">
+          <div className="h-6 flex items-center justify-center  rounded-full w-6 bg-white ">
             <FaLinkedinIn />
           </div>
         </div>

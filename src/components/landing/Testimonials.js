@@ -6,9 +6,9 @@ export default function Testimonials() {
   return (
     <div
       style={{ background: "rgba(22, 147, 135, 0.05)" }}
-      className="lg:px-20 md:px-10 py-20"
+      className="lg:px-20 px-5 md:px-10 py-20"
     >
-      <div className="mb-20">
+      <div className="mb-20 text-center md:text-left">
         <h1 className="text-4xl mb-2 secondary-text font-semibold">
           Testimonials
         </h1>
@@ -17,20 +17,20 @@ export default function Testimonials() {
         </p>
       </div>
 
-      <div className="flex items-center relative justify-center">
+      <div className="flex flex-col-reverse md:flex-row items-center relative justify-center">
         <button className="absolute left-0 hidden lg:flex h-20 w-20  items-center justify-center rounded-full border text-black">
           <AiOutlineArrowLeft size={20} />
         </button>
         <button className="absolute right-0 h-20 hidden lg:flex  justify-center items-center w-20 rounded-full border">
           <AiOutlineArrowRight size={20} />
         </button>
-        <div className="max-w-md">
-          <p className="text-xl mb-6">
+        <div className="max-w-md flex items-center md:block flex-col ">
+          <p className="md:text-xl text-base mt-4 text-center md:text-left md:mt-0 mb-4 md:mb-6">
             This app has helped me keep track of my finances. i can view and
             print my financial transactions record instantly on the go at no
             extra cost.
           </p>
-          <span>
+          <span >
             -Tamara Kimani,
             <br /> Product Designer
           </span>

@@ -20,21 +20,21 @@ const data = [
 
 export default function HowItWorks() {
   return (
-    <div className="secondary-bg py-20 md:px-10 lg:px-20">
-      <div>
-        <h1 className="text-4xl mb-2 font-bold text-white">How it works</h1>
-        <p className="text-lg text-white">
+    <div className="secondary-bg px-5 py-20 md:px-10 lg:px-20">
+      <div className="flex md:block items-center flex-col">
+        <h1 className="text-4xl mb-2 font-bold text-center md:text-left text-white">How it works</h1>
+        <p className="text-lg text-center text-black md:text-left text-white">
           Create your account in 3 easy steps
         </p>
 
-        <div className="flex lg:gap-10 mb-20">
+        <div className="flex flex-col md:flex-row  lg:gap-10 mb-20">
           {data.map((item, index) => (
-            <div key={index} className="mt-10 ">
-              <figure className="border-2 rounded-full inline-block h-16 flex items-center justify-center w-16">
+            <div key={index} className="mt-10 flex md:block items-center ">
+              <figure className="border-2 rounded-full inline-block p-4 md:p-0 md:h-16 flex items-center justify-center md:w-16">
                 <img className="w-8" src={item.img} alt="icon" />
               </figure>
-              <div className="mt-3">
-                <h1 className="text-lg mb-2 font-semibold text-white">
+              <div className="mt-3 ml-4">
+                <h1 className="text-lg md:mb-2 font-semibold text-white">
                   {item.title}
                 </h1>
                 <p className="lg:text-base md:text-xs pr-20 text-white">{item.desc}</p>
@@ -43,7 +43,7 @@ export default function HowItWorks() {
           ))}
         </div>
         <div className="">
-          <button className="text-black bg-white px-14 lg:py-4 md:py-3 rounded">
+          <button className="text-black bg-white px-14 py-3 lg:py-4 md:py-3 rounded">
             Get Started
           </button>
         </div>
