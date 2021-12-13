@@ -19,7 +19,9 @@ export default function Navbar() {
           style={{ background: "#169387" }}
           className=" lg:px-20 px-5 md:px-10 py-3.5 items-center flex justify-between"
         >
-          <h1 className="font-bold tracking-tight text-white text-3xl">mina</h1>
+          <h1 className="font-bold tracking-tight text-white text-3xl">
+            <Link to="">mina</Link>
+          </h1>
           <div className="text-white items-center hidden lg:flex justify-between ">
             <div>
               <a className="lg:mr-8" href="#div">
