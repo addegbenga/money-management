@@ -23,10 +23,10 @@ export default function HowItWorks() {
   return (
     <div className="secondary-bg px-5 py-20 md:px-10 lg:px-20">
       <div className="flex md:block items-center flex-col">
-        <h1 className="text-4xl mb-2 font-bold text-center md:text-left text-white">
+        <h1 className="text-4xl  xl:text-5xl mb-2 font-bold text-center md:text-left text-white">
           How it works
         </h1>
-        <p className="text-lg text-center text-white font-medium md:text-left text-white">
+        <p className="text-lg text-black text-opacity-80 text-center text-white font-medium md:text-left text-white">
           Create your account in 3 easy steps
         </p>
 
@@ -37,10 +37,10 @@ export default function HowItWorks() {
                 <img className="w-8" src={item.img} alt="icon" />
               </figure>
               <div className="mt-3 ml-4">
-                <h1 className="text-lg md:mb-2 font-semibold text-white">
+                <h1 className="text-lg xl:text-2xl md:mb-2 font-semibold text-white">
                   {item.title}
                 </h1>
-                <p className="lg:text-base md:text-xs pr-20 text-white">
+                <p className="lg:text-base  text-black text-opacity-80 md:text-xs pr-20 text-white">
                   {item.desc}
                 </p>
               </div>

@@ -35,10 +35,10 @@ export default function Features() {
   return (
     <div className="py-20 bg-gray-100 bg-opacity-30 px-5  md:px-10 lg:px-20 ">
       <div>
-        <h1 className="text-4xl primary-text text-center md:text-left font-semibold mb-2">
+        <h1 className="text-4xl xl:text-5xl tracking-tight primary-text text-center md:text-left font-semibold mb-2">
           Features
         </h1>
-        <p className="md:text-xl text-base text-center md:text-left font-semibold">
+        <p className="md:text-xl text-black text-opacity-70 text-base text-center md:text-left font-semibold">
           Here are some of the interesting features
         </p>
         <div className="mt-14 flex flex-col md:flex-row md:gap-5 lg:gap-20">
@@ -48,10 +48,10 @@ export default function Features() {
                 <img src={item.img} alt="icon" />
               </figure>
               <div className="ml-2.5">
-                <h1 className="text-xl font-semibold text-black text-opacity-80">
+                <h1 className="text-xl xl:text-2xl font-semibold text-black text-opacity-80">
                   {item.title}
                 </h1>
-                <p className="md:text-sm lg:text-lg">{item.desc}</p>
+                <p className="md:text-sm text-black text-opacity-60 lg:text-lg">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -66,10 +66,10 @@ export default function Features() {
               } flex flex-col md:flex-row gap-20 mb-14 md:md-0 items-center`}
             >
               <div className="lg:max-w-md flex md:block flex-col items-center ">
-                <h1 className="lg:text-4xl text-2xl text-center md:text-left px-8 md:px-0 md:text-2xl  secondary-text mb-3 tracking-tight font-semibold">
+                <h1 className="lg:text-4xl xl:text-5xl tracking-tighter text-2xl text-center md:text-left px-8 md:px-0 md:text-2xl  secondary-text mb-3 tracking-tight font-semibold">
                   {item.title}
                 </h1>
-                <p className="lg:text-lg text-center md:text-left md:text-sm">
+                <p className="lg:text-lg text-center text-opacity-70 text-black md:text-left md:text-sm">
                   {item.desc}
                 </p>
                 <button className="text-white secondary-bg px-12 mt-6 py-3 rounded md:py-2 lg:py-3">

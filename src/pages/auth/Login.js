@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Login() {
   return (
     <div className=" py-32 flex  justify-center  md:px-10 lg:px-20">
-      <div className=" bg-white md:py-8 md:rounded  md:shadow-lg lg:w-1/2 ">
+      <div className=" bg-white w-full md:py-8 md:rounded  md:shadow-lg lg:w-1/2 ">
         <h1 className="secondary-text text-center text-2xl font-semibold">
           Sign in
         </h1>

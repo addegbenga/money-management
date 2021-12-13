@@ -9,10 +9,10 @@ export default function Testimonials() {
       className="lg:px-20 px-5 md:px-10 py-20"
     >
       <div className="mb-20 text-center md:text-left">
-        <h1 className="text-4xl mb-2 secondary-text font-semibold">
+        <h1 className="text-4xl xl:text-5xl mb-2 tracking-tight secondary-text font-semibold">
           Testimonials
         </h1>
-        <p className="text-lg">
+        <p className="text-lg xl:text-xl text-black text-opacity-70">
           Our Customers are always right, hear what they have to say.
         </p>
       </div>
@@ -25,12 +25,12 @@ export default function Testimonials() {
           <AiOutlineArrowRight size={20} />
         </button>
         <div className="max-w-md flex items-center md:block flex-col ">
-          <p className="md:text-xl text-base mt-4 text-center md:text-left md:mt-0 mb-4 md:mb-6">
+          <p className="md:text-xl text-black text-opacity-70 text-base mt-4 text-center md:text-left md:mt-0 mb-4 md:mb-6">
             This app has helped me keep track of my finances. i can view and
             print my financial transactions record instantly on the go at no
             extra cost.
           </p>
-          <span >
+          <span className="text-black text-opacity-60" >
             -Tamara Kimani,
             <br /> Product Designer
           </span>

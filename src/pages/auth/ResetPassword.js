@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ResetPassword() {
+  const navigate = useNavigate();
   return (
     <div className=" py-32 flex  justify-center  md:px-10 lg:px-20">
-      <div className="  bg-white md:py-8 md:rounded  md:shadow-lg lg:w-1/2 ">
+      <div className="  bg-white md:py-10 md:rounded  md:shadow-lg lg:w-1/2 ">
         <h1 className="secondary-text text-center mb-3 text-2xl font-semibold">
           Forgot your password?
         </h1>
@@ -13,7 +15,7 @@ export default function ResetPassword() {
         <div className="mt-10 ">
           <form className="border border-opacity-50 px-5 py-10 grid gap-4 ">
             <input
-              className="border-2 md:border rounded p-3"
+              className="border md:border rounded p-3"
               type="password"
               placeholder="Email address"
             />
@@ -23,7 +25,7 @@ export default function ResetPassword() {
             </button>
           </form>
           <div className="flex justify-center mt-7 secondary-text">
-            <button>Go Back</button>
+            <button onClick={() => navigate(-1)}>Go Back</button>
           </div>
         </div>
       </div>

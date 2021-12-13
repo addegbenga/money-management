@@ -24,13 +24,13 @@ export default function Navbar() {
           </h1>
           <div className="text-white items-center hidden lg:flex justify-between ">
             <div>
-              <a className="lg:mr-8" href="#div">
+              <a className="lg:mr-14" href="#div">
                 Features
               </a>
-              <a className="lg:mr-8" href="href">
-                How it Works
+              <a className="lg:mr-14" href="href">
+                How it works
               </a>
-              <a className="lg:mr-4" href="#div">
+              <a className="" href="#div">
                 Contact us
               </a>
             </div>
