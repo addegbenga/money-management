@@ -8,14 +8,14 @@ const data = [
     desc: "Create an account to plan for whatever matters to you.",
   },
   {
-    img: "/assets/Group 1.png",
-    desc: "Receive donations to your  cause and get acess to start  studying immediately ",
-    title: "Manage",
-  },
-  {
     img: "/assets/Vector (4).png",
     desc: "Link your accounts to Mina.  No limit to the accounts you  can link.",
     title: "Setup",
+  },
+  {
+    img: "/assets/Group 1.png",
+    desc: "Receive donations to your  cause and get acess to start  studying immediately ",
+    title: "Manage",
   },
 ];
 
@@ -26,7 +26,7 @@ export default function HowItWorks() {
         <h1 className="text-4xl mb-2 font-bold text-center md:text-left text-white">
           How it works
         </h1>
-        <p className="text-lg text-center text-black md:text-left text-white">
+        <p className="text-lg text-center text-white font-medium md:text-left text-white">
           Create your account in 3 easy steps
         </p>
 

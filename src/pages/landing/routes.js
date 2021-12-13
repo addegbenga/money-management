@@ -3,7 +3,8 @@ import { useRoutes } from "react-router-dom";
 import NotFound from "../../components/utils/NotFound";
 const Login = React.lazy(() => import("../auth/Login"));
 const Register = React.lazy(() => import("../auth/Register"));
-
+const Resetpassword = React.lazy(() => import("../auth/ResetPassword"));
+const ForgotPassword = React.lazy(() => import("../auth/ForgotPassword"));
 export default function Index() {
   let route = [
     {
@@ -13,6 +14,14 @@ export default function Index() {
     {
       path: "register",
       element: <Register />,
+    },
+    {
+      path: "forgot",
+      element: <ForgotPassword />,
+    },
+    {
+      path: "reset-password",
+      element: <Resetpassword />,
     },
     {
       path: "*",
