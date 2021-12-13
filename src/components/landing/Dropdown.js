@@ -42,19 +42,19 @@ export default function Dropdown({ isOpen, closeModal }) {
               <div className="inline-block w-full p-6 pt-14 pb-20 mt-16  overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl ">
                 <Dialog.Title
                   as="h3"
-                  className="text-lg mb-5 font-medium leading-6 text-gray-900"
+                  className="text-lg mb-5  leading-6 text-gray-900"
                 >
                   Features
                 </Dialog.Title>
                 <Dialog.Title
                   as="h3"
-                  className="text-lg mb-5 font-medium leading-6 text-gray-900"
+                  className="text-lg mb-5  leading-6 text-gray-900"
                 >
                   How it works
                 </Dialog.Title>
                 <Dialog.Title
                   as="h3"
-                  className="text-lg mb-5 font-medium leading-6 text-gray-900"
+                  className="text-lg mb-5  leading-6 text-gray-900"
                 >
                   Contact us
                 </Dialog.Title>
@@ -63,7 +63,7 @@ export default function Dropdown({ isOpen, closeModal }) {
                   <button
                     style={{ background: " #0c7268" }}
                     type="button"
-                    className="inline-flex justify-center px-4 py-3 text-sm font-medium text-white secondary-bg border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    className="inline-flex justify-center px-4 py-3 text-base font-medium text-white secondary-bg border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     onClick={closeModal}
                   >
                     Create account
@@ -71,7 +71,7 @@ export default function Dropdown({ isOpen, closeModal }) {
                   <button
                   style={{border:"1.2px solid  #0c7268"}}
                     type="button"
-                    className="inline-flex justify-center px-5 py-3 text-sm font-medium text-black border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    className="inline-flex justify-center px-5 py-3 text-base font-medium text-black border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     onClick={closeModal}
                   >
                     Sign up
