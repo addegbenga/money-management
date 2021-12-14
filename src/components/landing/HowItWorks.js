@@ -26,7 +26,7 @@ export default function HowItWorks() {
         <h1 className="text-4xl  xl:text-5xl mb-2 font-bold text-center md:text-left text-white">
           How it works
         </h1>
-        <p className="text-lg text-black text-opacity-80 text-center text-white font-medium md:text-left text-white">
+        <p className="text-lg text-white font-medium text-opacity-80 text-center text-white font-medium md:text-left text-white">
           Create your account in 3 easy steps
         </p>
 
