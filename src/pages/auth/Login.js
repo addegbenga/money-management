@@ -11,12 +11,12 @@ export default function Login() {
         <div className="mt-10">
           <form className="border-t border-opacity-50 px-5 py-10 grid gap-4 ">
             <input
-              className="border-2 md:border rounded p-3"
+              className="border  border-gray-400 md:border rounded p-3"
               type="text"
               placeholder="Email address"
             />
             <input
-              className="border-2 md:border rounded p-3"
+              className="border border-gray-400 md:border rounded p-3"
               type="password"
               placeholder="Password"
             />

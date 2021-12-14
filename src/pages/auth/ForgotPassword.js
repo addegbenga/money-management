@@ -15,12 +15,12 @@ export default function ForgotPassword() {
         <div className="mt-10">
           <form className="border-t border-opacity-50 px-5 py-10 grid gap-4 ">
             <input
-              className="border md:border rounded p-3"
+              className="border  border-gray-400 md:border rounded p-3"
               type="password"
               placeholder="Password"
             />
             <input
-              className="border md:border rounded p-3"
+              className="border  border-gray-400 md:border rounded p-3"
               type="password"
               placeholder="Password"
             />

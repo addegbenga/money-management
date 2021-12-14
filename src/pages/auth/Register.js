@@ -12,23 +12,23 @@ export default function Register() {
           <form className="border-t border-opacity-50 px-5 py-10 grid gap-4 ">
             <div className="grid grid-cols-2 gap-3">
               <input
-                className="border md:border rounded p-3"
+                className="border  border-gray-400 md:border rounded p-3"
                 type="text"
                 placeholder="First name"
               />
               <input
-                className="border md:border rounded p-3"
+                className="border  border-gray-400 md:border rounded p-3"
                 type="text"
                 placeholder="Last name"
               />
             </div>
             <input
-              className="border md:border rounded p-3"
+              className="border  border-gray-400 md:border rounded p-3"
               type="text"
               placeholder="Email address"
             />
             <input
-              className="border md:border rounded p-3"
+              className="border  border-gray-400 md:border rounded p-3"
               type="password"
               placeholder="Password"
             />

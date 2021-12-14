@@ -13,9 +13,9 @@ export default function ResetPassword() {
           Enter your email and we will send you a link to reset your password
         </p>
         <div className="mt-10 ">
-          <form className="border border-opacity-50 px-5 py-10 grid gap-4 ">
+          <form className="border  border-opacity-50 px-5 py-10 grid gap-4 ">
             <input
-              className="border md:border rounded p-3"
+              className="border  border-gray-400 md:border rounded p-3"
               type="password"
               placeholder="Email address"
             />
