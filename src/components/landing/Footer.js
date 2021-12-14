@@ -39,8 +39,8 @@ export default function Footer() {
       </div>
 
       <div className="flex justify-between  mt-24">
-        <p className="text-white">&copy;Mina</p>
-        <div className="text-white gap-3 md:gap-20 flex ">
+        <p className="text-white text-opacity-80">&copy;Mina</p>
+        <div className="text-white text-opacity-80 gap-3 md:gap-20 flex ">
           <a className="" href="#div">
             Terms
           </a>
