@@ -11,7 +11,7 @@ export default function Dropdown({ isOpen, closeModal }) {
           className="fixed inset-0 z-10 overflow-y-auto"
           onClose={closeModal}
         >
-          <div className="min-h-screen bg-black bg-opacity-10  text-center">
+          <div className="min-h-screen lg:hidden bg-black bg-opacity-10  text-center">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
