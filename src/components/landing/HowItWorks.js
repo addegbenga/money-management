@@ -40,7 +40,7 @@ export default function HowItWorks() {
                 <h1 className="text-lg xl:text-2xl md:mb-2 font-semibold text-white">
                   {item.title}
                 </h1>
-                <p className="lg:text-base  text-black text-opacity-80 md:text-xs pr-20 text-white">
+                <p className="lg:text-base  text-white text-opacity-80 md:text-xs pr-20 text-white">
                   {item.desc}
                 </p>
               </div>
@@ -48,7 +48,7 @@ export default function HowItWorks() {
           ))}
         </div>
         <div className="">
-          <button className="text-black bg-white px-14 py-3 lg:py-4 md:py-3 rounded">
+          <button className="text-black text-opacity-80 bg-white px-14 py-3 lg:py-4 md:py-3 rounded">
             <Link to="register">Get Started</Link>
           </button>
         </div>
